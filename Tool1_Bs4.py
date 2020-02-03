@@ -3,8 +3,9 @@
 import requests
 from bs4 import BeautifulSoup
 # URL为目标网址
+headers={'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
 URL = 'https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html'
-res = requests.get(URL)
+res = requests.get(URL,headers=headers)
 
 if res.status_code == 200:
     soup = BeautifulSoup(res.text,'html.parser')
