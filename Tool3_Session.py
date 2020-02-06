@@ -1,3 +1,5 @@
+# URL：https://wordpress-edu-3autumn.localprod.oc.forchange.cn/wp-login.php
+# 账号：spiderman，密码：crawler334566
 import requests,json
 
 session = requests.session()
