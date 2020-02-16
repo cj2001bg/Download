@@ -26,7 +26,7 @@ def send_mail(tem,weather):
     # 把邮箱的服务器地址赋值到变量mailhost上，地址需要是字符串的格式。
     mailhost = 'smtp.163.com'
     #实例化一个smtplib模块里的SMTP类的对象，这样就可以使用SMTP对象的方法和属性了
-    mail_163 = smtplib.SMTP(mailhost)
+    mail_163 = smtplib.SMTP_SSL(mailhost)
     #连接服务器，第一个参数是服务器地址，第二个参数是SMTP端口号。
     mail_163.connect(mailhost,465)
     #以上，皆为连接服务器的代码
