@@ -47,3 +47,9 @@ gevent.joinall(tasks_list)
 
 end = time.time()
 print(end-start)
+# csv存档
+with open('Bohewang.csv','w',newline='',encoding='utf-8') as f:  #若是windows要用'utf-8-sig'
+    writer =csv.writer(f)
+    writer.writerows(foods_list)
+
+print('程序已完成！')
